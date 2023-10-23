@@ -1,0 +1,30 @@
+8MGFw:
+  template_idx: 0
+  flow_id: 8MGFw
+  accident_location: Parking Lot
+  activate: true
+  story_generation: true
+JT3cM:
+  template_idx: 0
+  flow_id: JT3cM
+  accident_location: Driveway
+  activate: true
+  story_generation: true
+sTXKs:
+  template_idx: 0
+  flow_id: sTXKs
+  accident_location: Highway
+  activate: true
+  story_generation: true
+903w4:
+  template_idx: 0
+  flow_id: 903w4
+  accident_location: Roadway
+  activate: true
+  story_generation: true
+a1DA3:
+  template_idx: 0
+  flow_id: a1DA3
+  accident_location: Intersection
+  activate: true
+  story_generation: true

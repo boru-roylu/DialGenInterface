@@ -1,0 +1,59 @@
+domain,slot_name,possible_slot_values,Parking Lot,Driveway,Highway,Roadway,Intersection,Group ID,Must have,Global,"Important slot(have chance to be improved)",Free-form,categorical_values,extractive_values,abstractive_values,time_values,slot_description,example_value
+Adjuster,Explain Coverages,[],,,,,,,,,,1,0,1,0,0,Are insurance coverages being explained?,So we're going to take care of your car damage because you have collision coverage for that and it covers all the repairs with or without any fault or deductible. And then we will also cover medical expenses for you and your passengers as well because you have medical payment coverage in your policy.
+Adjuster,Permission to Record,"['yes', 'no']",,,,,,,1,,,,1,0,0,0,Does the adjuster have the callers permission to record?,yes
+Adjuster,Set up Inspection,"['photo claim', 'field assignment']",,,,,,,,,,,1,0,0,0,What kind of inspection is set up?,field Assignment
+Adjuster,Set up Rental,"['yes', 'no']",,,,,,,,,,,1,0,0,0,Does a rental vehicle need to be set up?,no
+ContactInfo,First Name,[],,,,,,1,1,,1,,0,1,0,0,"First name of a participant, and provide that participant role.",Bob Smith
+ContactInfo,Last Name,[],,,,,,1,1,,1,,0,1,0,0,"Last name of a participant, and provide that participant role.",Bob Smith
+ContactInfo,Home Address,[],,,,,,1,,,,,0,1,0,0,A participant home address.,"1410 NE Campus Pkwy, Seattle, WA 98195"
+ContactInfo,Phone Number,[],,,,,,1,,,,,0,1,0,0,A participant phone number.,2065432100
+ContactInfo,Email Address,[],,,,,,,,,,,0,1,0,0,A participant's email address.,help@uw.edu
+ContactInfo,Policy Number,[],,,,,,,,,,,0,1,0,0,Policy number,6052153947
+ContactInfo,Date of Birth,[],,,,,,,,,,,0,1,0,0,Date of birth,Sep 31 1995
+DriverActions,Car Motion,"['traveling forward', 'backing', 'turning', 'changing lanes', 'stopped', 'other', 'unsure']",,,,,,,1,,1,,1,0,0,0,Describe the motion of the referents vehicle.,turning
+DriverActions,Speed,[],,,,,,,1,,,,0,1,0,0,"Description of the speed of the referent.   This may include specific values, like 45 mph, as well as less specific terms like they were going really fast.",40 mph
+DriverActions,Distractions,"['cellphone', 'animals', 'smoking', 'passengers', 'traffic', 'eating', 'not paying attention', 'other', 'unsure', 'no distraction']",,,,,,,,,,,1,0,0,0,,smoking
+DriverActions,Brake,"['yes', 'no', 'unsure']",,,,,,,,,,,1,0,0,0,Did the referent apply their brakes?,yes
+DriverActions,Horn,"['yes', 'no', 'unsure']",,,,,,,,,,,1,0,0,0,Did the referent use their horn.,no
+DriverActions,Turn Signal,"['yes', 'no', 'unsure']",,,,,,,,,,,1,0,0,0,Did the referent use a turn signal?,unkown
+DriverActions,Traffic Controls Obeyed,"['yes', 'no', 'unsure']",,,,,,,,,,,1,0,0,0,Did the referent properly obey any relevant traffic signals?,unkown
+Evidences,Police Report,"['yes', 'no', 'unsure']",,,,,,2,1,,1,,1,0,0,0,Was a police report filed?,yes
+Evidences,Police Department Name,[],,,,,,2,,,,1,0,1,0,0,The police department name.,Tacoma Police Department
+Evidences,Pictures,"['at scene', 'after accident', 'no picture', 'unsure']",,,,,,,,,,,1,0,0,0,Were pictures taken?  Select all values that apply.,at scene
+Evidences,Tickets Citations,"['caller party cited', 'other party cited', 'no party cited', 'multiple parties cited', 'unsure', 'no ticket']",,,,,,2,,,,,1,0,0,0,Did any of the parties receive a ticket or some other citation from the police?,caller party cited
+Evidences,Police Report Number,[],,,,,,2,,,,,0,1,0,0,The police report number.,3608868550022
+Evidences,Skid Marks,"['yes', 'no', 'unsure']",,,,,,,,1,,,1,0,0,0,Were there skid marks at the scene of the accident?,yes
+InjuryDetails,Ambulance,"['yes', 'no', 'unsure']",,1,,,,,,,,,1,0,0,0,Was an ambulance used?  Note that words like paramedic or EMT are also indicative of ambulance.,no
+InjuryDetails,Body Part Injured,"['head', 'neck', 'shoulder', 'chest', 'abdomen', 'back', 'limb', 'other']",,,,,,3,,,,,1,0,0,0,What body part(s) were injured?,neck
+InjuryDetails,Injury Type,"['bruise', 'broken fracture', 'cut scratch', 'bleeding', 'strain sprain', 'sore', 'other', 'no injury']",,,,,,3,,,,,1,0,0,0,What was the nature of the injury?,broken_fracture
+InjuryDetails,Medical Treatment,"['MRI', 'surgery', 'CAT scan', 'hospitalization', 'ER', 'x-ray', 'other']",,,,,,3,,,,,1,0,0,0,,x-ray
+AccidentDetails,Damage Part,"['front', 'right', 'back', 'left', 'front right', 'front left', 'back left', 'back right', 'other', 'unsure']",,,,,,,1,,1,,1,0,0,0,The points of impact on the referent vehicle.  Note that several values may be provided for any given point of impact.,front
+AccidentDetails,Accident Location,"['parking lot', 'driveway', 'highway', 'roadway', 'intersection', 'other']",,,,,,,1,1,1,,1,0,0,0,"Location of the accident or loss.  Includes specific locations, for example, highway or street names, but also includes vague descriptions of locations, like in front of my moms house.",parking lot
+AccidentDetails,Num of Passengers,"['0', '1', '2+', 'unsure']",,,,,,,1,,,,1,0,0,0,Number of passengers in the referent vehicle.   Number of passengers should not include the driver.,3
+AccidentDetails,Witnesses,"['yes', 'no', 'unsure']",,,,,,,1,,,,1,0,0,0,"Were any witnesses present?  Even if the text indicates that there were no witnesses, or caller is not sure if there were any witnesses, the text should still be marked as witness, and the value no or unknown marked accordingly.",yes
+AccidentDetails,Num of Involved Cars,"['1', '2', '3', '4+', 'unsure']",,,,,,,,,,,1,0,0,0,,2
+AccidentDetails,Children Involved,"['yes', 'no', 'unsure']",,,,,,,,,,,1,0,0,0,Were children involved in the accident?,yes
+AccidentDetails,Airbag Deployed,"['yes', 'no', 'unsure']",,,,,,,,,,,1,0,0,0,Were the airbags in the referent's vehicle deployed?,no
+AccidentDetails,Towed,"['yes', 'no', 'unsure']",,,,,,,,,,,1,0,0,0,Was the referent's vehicle towed from the scene?,yes
+AccidentDetails,Pedestrians Involved,"['yes', 'no', 'unsure']",,,1,,,,,1,,,1,0,0,0,Were any pedestrians involved in the accident?,no
+AccidentDetails,Date of Accident,[],,,,,,5,1,1,,,0,1,0,0,"Approximate date of the loss.  Includes specific dates, as well vague descriptions of days, like two days ago.",March 4th 
+AccidentDetails,Time of Accident,[],,,,,,5,1,1,,,0,1,0,0,"Approximate time of the loss.  Includes specific times of day, as well vague descriptions of time, like after work.",9:00 AM
+AccidentDetails,Subjective Fault,"['caller', 'other driver']",,,,,,,,,,,1,0,0,0,,other driver
+CarInfo,Make/Model,[],,,,,,6,1,,,,0,1,0,0,"For any information regarding the specifics of a vehicle, including the make, model, model year, etc of the vehicle.",Honda 
+CarInfo,Make Year,[],,,,,,6,1,,,,0,1,0,0,,2012
+CarInfo,Color,[],,,,,,6,1,,,,0,1,0,0,,blue
+Trip,Destination of Trip,[],,,,,,8,,,,1,0,1,0,0,"Where was the driver headed to?   This can be a specific location, like an address, or it can be more vague statement like I was heading to the supermarket.",my cousin's house
+Trip,Purpose of Trip,[],,,,,,8,,,,1,0,1,0,0,,social visit
+Trip,Origin of Trip,[],,,,,,8,,,,1,0,1,0,0,"Where did the driver start?   This can be a specific location, like an address, or it can be more vague statement like I was coming home from work.",my house
+CarInfo,Car Mileage,[],,,,,,,,,,,0,1,0,0,Mileage on a vehicle.,43500 mile
+CarInfo,Rideshare (Uber/Lyft),"['yes', 'no', 'unsure']",,,,,,,,,,,1,0,0,0,"Was the referent driving for a ride share service, like Uber, Lyft, etc?",no
+TrafficEnvironment,Weather Visibility,"['clear', 'cloudy', 'rainy', 'snowy', 'foggy', 'windy', 'other', 'unsure']",,,,,,7,,1,,,1,0,0,0,The weather and visibility conditions.  Select all that apply.,rainy
+TrafficEnvironment,Obstructions to View,"['yes', 'no', 'unsure']",,,,,,7,,,,,1,0,0,0,"Were there any obstructions to the view, for example objects in the roadway, etc?",yes
+TrafficEnvironment,Road Condition,"['dry', 'wet', 'slippery', 'debris', 'potholes', 'straight', 'curved', 'tunnel', 'steep incline', 'flat', 'other', 'unsure']",1,1,,,,,,,,,1,0,0,0,What is the condition of the roadway?   Select all values that apply.,wet
+TrafficEnvironment,Traffic Signal,"['stop sign', 'yield sign', 'green light', 'yellow light', 'red light', 'other', 'unsure', 'no signal or sign']",1,1,,,,,1,,1,,1,0,0,0,"Description of the traffic signal, including traffic lights and stop signs.   Select the most descriptive value, for example, while a flashing red light is technically also a red light, only select one.",green light
+TrafficEnvironment,Description of Lanes,"['normal', 'turn lane', 'shoulder', 'other', 'unsure']",1,1,,,,,1,,,,1,0,0,0,Description of the lanes.,turn lane
+TrafficEnvironment,Num of Lanes,"['1', '2', '3', '4+', 'unsure']",1,1,,,,,1,1,1,,1,0,0,0,"How many lanes on the road.   Be sure to use context in determining the number.  For example, if the text says 2 lanes in each direction then the value should be 4.",2
+TrafficEnvironment,Traffic Condition,"['heavy', 'moderate', 'light', 'other', 'unsure']",1,1,,,,7,,,,,1,0,0,0,"Description of the traffic condition, for example, whether the traffic was light or heavy.",heavy
+TrafficEnvironment,Speed Limit,[],1,1,,,,,,,,,0,1,0,0,The speed limit.,60 mph
+TrafficEnvironment,Traffic Flow,"['one-way', 'two-way', 'other', 'unsure']",1,1,,,,,,1,,,1,0,0,0,"Description of the traffic flow, for example, the direction of traffic.",two-way
+TrafficEnvironment,Parking Lot Type,"['angled', 'straight', 'other', 'unsure']",,,1,1,1,,,1,,,1,0,0,0,Description of parking lot.,straight

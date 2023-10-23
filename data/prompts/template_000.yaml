@@ -1,0 +1,35 @@
+summaries:
+  - "In this role play, one person will act as an insurance agent [AGENT] from AllState and the other person will be the caller [USER] submitting a claim. Follow these steps for a successful call."
+  - "At the beginning of the call, [AGENT] needs to verify [USER] personal information to access the account information."
+  - "[AGENT] will inform [USER] that the call may be recorded and will ask for permission to proceed at the beginning of the conversation."
+  - "[AGENT] will ask [USER] about the details of the car accident, so [USER] should have a scenario in mind to describe."
+  - "[USER] needs to use the information below to describe what happened in the accident."
+  - "[AGENT] should break down the long questions into different <p>."
+
+  - "[USER] must provide [ContactInfo_TUPLES] as contact information to verify the account. Ask a single question at a time."
+  - "During the call, [AccidentDetails_TUPLES] will be discussed, which includes crucial information about the accident."
+  - "[AGENT] needs to be informed about the traffic environment, including [TrafficEnvironment_TUPLES], to better assist [USER]."
+  - "[AGENT] needs to inquire about [USER]'s and the other driver's actions during the accident, including specific values such as 45 mph or less specific terms like 'going really fast.'"
+  - "[USER] must inform [AGENT] of any evidence related to the accident, such as [Evidences_TUPLES]."
+  - "[USER] must provide information regarding their and the other driver's car, which includes [CarInfo_TUPLES]."
+  - "To better assist [USER], [AGENT] must confirm if there are any injuries [USER] sustained during the accident, such as [InjuryDetails_TUPLES], to determine if the claim should be covered by medical insurance."
+  - "[USER] needs to inform [AGENT] of their trip details, including [Trip_TUPLES]."
+  - "The [AGENT] needs to ask [USER] for the following information: [Adjuster_TUPLES]."
+
+  - "[AGENT] will ask a series of questions to get a detailed description of the accident. [USER] should be prepared to provide as much information as possible."
+  - "[AGENT] may need to gently prompt [USER] to give more information or details that they may have forgotten or are not aware of."
+  - "If any new information comes up during the call, [AGENT] will verify and reconfirm the details with [USER] to ensure consistency."
+  - "Sometimes, due to poor phone connections, [AGENT] and [USER] need to confirm what people said. Please mimic the call in poor phone connection in <p> as realistically as possible."
+
+subdialogs:
+  -
+    - party: agent
+      role: agent
+      text: Thank you for calling DialGen car insurance! This is [AGENT]. How may I help you today?
+      iteration: -1
+      turn_idx: 0
+    - party: user
+      role: user
+      text: Hello. This is [USER]. I am calling for a car accident.
+      iteration: -1
+      turn_idx: 1

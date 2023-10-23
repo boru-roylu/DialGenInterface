@@ -1,0 +1,431 @@
+role_to_party:
+  agent: David
+  user: James
+story_caller_tuples:
+- domain: AccidentDetails
+  slot: Accident Location
+  value: Home Depot Parking Lot
+  mandatory_value: true
+- domain: Adjuster
+  slot: Permission to Record
+  value: 'Yes'
+  mandatory_value: true
+- domain: ContactInfo
+  slot: First Name
+  value: James
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Last Name
+  value: Munter
+  mandatory_value: true
+- domain: DriverActions
+  slot: Car Motion
+  value: Other, Changing Lanes
+  mandatory_value: true
+- domain: DriverActions
+  slot: Speed
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Police Report
+  value: 'Yes'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Damage Part
+  value: Back Left
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Passengers
+  value: 2+
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Witnesses
+  value: 'Yes'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Date of Accident
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Time of Accident
+  value: null
+  mandatory_value: false
+- domain: CarInfo
+  slot: Make/Model
+  value: Alfa Romeo Spider
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make Year
+  value: '1993'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Color
+  value: gold
+  mandatory_value: true
+- domain: Trip
+  slot: Purpose of Trip
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Towed
+  value: 'No'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Subjective Fault
+  value: Other Driver
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Phone Number
+  value: 663-139-6036
+  mandatory_value: true
+- domain: DriverActions
+  slot: Distractions
+  value: Traffic
+  mandatory_value: true
+- domain: DriverActions
+  slot: Brake
+  value: 'No'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Airbag Deployed
+  value: 'No'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Children Involved
+  value: 'No'
+  mandatory_value: true
+- domain: Evidences
+  slot: Police Report Number
+  value: null
+  mandatory_value: false
+- domain: ContactInfo
+  slot: Home Address
+  value: 20153 Courtney Greens Suite 115, San Antonio, Texas 13196
+  mandatory_value: true
+- domain: Evidences
+  slot: Police Department Name
+  value: San Antonio Police Department
+  mandatory_value: false
+- domain: Evidences
+  slot: Tickets Citations
+  value: No Party Cited
+  mandatory_value: true
+- domain: Trip
+  slot: Destination of Trip
+  value: library
+  mandatory_value: false
+- domain: Trip
+  slot: Origin of Trip
+  value: club
+  mandatory_value: false
+story_other_driver_tuples:
+- domain: Adjuster
+  slot: Permission to Record
+  value: 'Yes'
+  mandatory_value: true
+- domain: ContactInfo
+  slot: First Name
+  value: Lloyd
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Last Name
+  value: Ussery
+  mandatory_value: true
+- domain: DriverActions
+  slot: Car Motion
+  value: Traveling Forward, Backing, Other, Changing Lanes
+  mandatory_value: true
+- domain: DriverActions
+  slot: Speed
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Police Report
+  value: Unsure
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Damage Part
+  value: Left
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Passengers
+  value: Unsure
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Witnesses
+  value: Unsure
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make/Model
+  value: Cadillac Eldorado
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make Year
+  value: '1996'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Color
+  value: light blue
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Medical Treatment
+  value: MRI
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Children Involved
+  value: 'No'
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Ambulance
+  value: 'No'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Rideshare (Uber/Lyft)
+  value: 'Yes'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Airbag Deployed
+  value: Unsure
+  mandatory_value: true
+- domain: Evidences
+  slot: Pictures
+  value: Unsure
+  mandatory_value: true
+- domain: DriverActions
+  slot: Brake
+  value: 'Yes'
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Body Part Injured
+  value: Head
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Injury Type
+  value: No Injury
+  mandatory_value: true
+'[AccidentDetails_TUPLES]':
+- domain: AccidentDetails
+  slot: Accident Location
+  value: Home Depot Parking Lot
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Damage Part
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Passengers
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Witnesses
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Date of Accident
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Time of Accident
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Towed
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Subjective Fault
+  value: Other Driver
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Airbag Deployed
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Children Involved
+  value: null
+  mandatory_value: true
+'[Adjuster_TUPLES]':
+- domain: Adjuster
+  slot: Permission to Record
+  value: null
+  mandatory_value: true
+'[ContactInfo_TUPLES]':
+- domain: ContactInfo
+  slot: First Name
+  value: James
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Last Name
+  value: Munter
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Phone Number
+  value: 663-139-6036
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Home Address
+  value: 20153 Courtney Greens Suite 115, San Antonio, Texas 13196
+  mandatory_value: true
+'[DriverActions_TUPLES]':
+- domain: DriverActions
+  slot: Car Motion
+  value: null
+  mandatory_value: true
+- domain: DriverActions
+  slot: Speed
+  value: null
+  mandatory_value: false
+- domain: DriverActions
+  slot: Distractions
+  value: null
+  mandatory_value: true
+- domain: DriverActions
+  slot: Brake
+  value: null
+  mandatory_value: true
+'[Evidences_TUPLES]':
+- domain: Evidences
+  slot: Police Report
+  value: null
+  mandatory_value: true
+- domain: Evidences
+  slot: Police Report Number
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Police Department Name
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Tickets Citations
+  value: null
+  mandatory_value: true
+'[CarInfo_TUPLES]':
+- domain: CarInfo
+  slot: Make/Model
+  value: null
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make Year
+  value: '1993'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Color
+  value: null
+  mandatory_value: true
+'[Trip_TUPLES]':
+- domain: Trip
+  slot: Purpose of Trip
+  value: null
+  mandatory_value: false
+- domain: Trip
+  slot: Destination of Trip
+  value: null
+  mandatory_value: false
+- domain: Trip
+  slot: Origin of Trip
+  value: null
+  mandatory_value: false
+story_summaries:
+- 'Here are the information we have about the caller:'
+- 'AccidentDetails: (Accident Location = Home Depot Parking Lot), (Damage Part = Back
+  Left), (Num of Passengers = 2+), (Witnesses = Yes), (Towed = No), (Subjective Fault
+  = Other Driver), (Airbag Deployed = No), (Children Involved = No)
+
+  ContactInfo: (First Name = James), (Last Name = Munter), (Phone Number = 663-139-6036),
+  (Home Address = 20153 Courtney Greens Suite 115, San Antonio, Texas 13196)
+
+  DriverActions: (Car Motion = Other, Changing Lanes), (Distractions = Traffic), (Brake
+  = No)
+
+  Evidences: (Police Report = Yes), (Police Department Name = San Antonio Police Department),
+  (Tickets Citations = No Party Cited)
+
+  CarInfo: (Color = gold)
+
+  Trip: (Destination of Trip = library), (Origin of Trip = club)'
+- 'Here are the information we have about the other driver:'
+- 'ContactInfo: (First Name = Lloyd), (Last Name = Ussery)
+
+  DriverActions: (Car Motion = Traveling Forward, Backing, Other, Changing Lanes),
+  (Brake = Yes)
+
+  Evidences: (Police Report = Unsure), (Pictures = Unsure)
+
+  AccidentDetails: (Damage Part = Left), (Num of Passengers = Unsure), (Witnesses
+  = Unsure), (Children Involved = No), (Airbag Deployed = Unsure)
+
+  CarInfo: (Make/Model = Cadillac Eldorado), (Make Year = 1996), (Color = light blue),
+  (Rideshare (Uber/Lyft) = Yes)
+
+  InjuryDetails: (Medical Treatment = MRI), (Ambulance = No), (Body Part Injured =
+  Head), (Injury Type = No Injury)'
+- Use the information above to create a length and detail-enriched story about a car
+  accident in a parking lot.
+- Ensure the story cover how the crash happened.
+- No need to provide a summary of the story.
+- The story is around 1000 words.
+information_summaries:
+- 'Accident details: [AccidentDetails_TUPLES].'
+- 'Evidences of the car accident: [Evidences_TUPLES].'
+- 'Traffic condition: [TrafficEnvironment_TUPLES].'
+- 'Caller''s driver action: [DriverActions_TUPLES].'
+- 'Caller''s car information: [CarInfo_TUPLES].'
+- 'Caller''s injury details: [InjuryDetails_TUPLES].'
+step_summaries:
+- Have role play car accident claim call. One person is an agent [AGENT] from a car
+  insurance company and the other is the caller [USER] who wants to file a claim.
+- At beginning of the call, have [AGENT] ask for [USER]'s permission to record the
+  call and proceeds with the conversation.
+- Within some <p> </p>, have simulate poor phone connection. Have [AGENT] and [USER]
+  can not hear each other and need to repeat what they said.
+- Have [AGENT] verify [USER] personal information to access account information at
+  the beginning of the call.
+- Have [USER] describe the car accident by using story and tuples above to describe
+  the accident.
+- Have [AGENT] confirm new information with [USER] during the call to ensure consistency.
+- Have [AGENT] and [USER] engage in small talk with each other.
+- Have [AGENT] explain the insurance coverages to [USER].
+user_personality: '[USER] is cooperative, willing to work with the insurance company
+  and other parties involved in resolving the claim.'
+agent_personality: '[AGENT] is conversational, personable, patient, empathetic, sympathetic
+  and professional.'
+instructions:
+- Use the story, information, and personality to create a role play script and follow
+  the steps.
+story:
+- James Munter was on his way to the library to pick up some books for his research
+  when he decided to make a quick stop at the Home Depot to grab some gardening supplies.
+  James had been driving for almost an hour when finally saw the parking lot of the
+  store. He found a spot near the back of the parking lot and began backing into it.
+- Suddenly, he felt a jolt and heard a loud thud. James quickly turned around to see
+  what had happened and noticed that another car had hit his vehicle. The impact was
+  enough to leave noticeable damage to his car's back left side.
+- Shaken and confused, James got out of his car and walked over to the driver of the
+  other vehicle, Lloyd Ussery. As he got closer, he noticed that Mr. Ussery was an
+  older gentleman and seemed disoriented.
+- '"Are you okay?" asked James.'
+- '"I''m fine, son," Mr. Ussery replied.'
+- James examined the damage to his car and then inspected Mr. Ussery's Cadillac Eldorado.
+  The damage to the Cadillac was also extensive on its left side. James noticed that
+  there were no airbags deployed in either vehicle, which made him feel a little relieved.
+- '"Did you see what happened?" asked James.'
+- '"I didn''t see anything," replied Mr. Ussery. "I just felt something hit me from
+  behind."'
+- James then went on to ask Mr. Ussery if he was okay and whether he needed medical
+  attention or an ambulance. Mr. Ussery replied that he felt fine, but he agreed to
+  wait for the police to arrive.
+- While they waited, James called the San Antonio Police Department to report the
+  accident. He provided them with all the details about what happened and requested
+  that an officer come to take a report.
+- During this time, witnesses started to approach the scene of the accident. One witness,
+  in particular, approached James and stated that he had seen everything and would
+  be willing to give a statement to the police.
+- The police arrived at the scene within a few minutes, and James provided them with
+  all the information they needed for their report. Based on James' statement and
+  the witness's account, the police concluded that Mr. Ussery was at fault for the
+  accident. They issued no citations, however, as Mr. Ussery was not conscious of
+  his actions.
+- After the police left, James called his insurance company to report the accident.
+  He gave them all the details and requested an Carol to assess the damage to his
+  car. He then returned home

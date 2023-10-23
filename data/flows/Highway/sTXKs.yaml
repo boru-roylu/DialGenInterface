@@ -1,0 +1,541 @@
+role_to_party:
+  agent: Joyce
+  user: Ruth
+story_caller_tuples:
+- domain: AccidentDetails
+  slot: Accident Location
+  value: null
+  mandatory_value: true
+- domain: Adjuster
+  slot: Permission to Record
+  value: 'Yes'
+  mandatory_value: true
+- domain: ContactInfo
+  slot: First Name
+  value: Ruth
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Last Name
+  value: Martin
+  mandatory_value: true
+- domain: DriverActions
+  slot: Car Motion
+  value: Turning, Backing, Stopped
+  mandatory_value: true
+- domain: DriverActions
+  slot: Speed
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Police Report
+  value: 'Yes'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Damage Part
+  value: Back
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Passengers
+  value: '1'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Witnesses
+  value: 'Yes'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Date of Accident
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Time of Accident
+  value: null
+  mandatory_value: false
+- domain: CarInfo
+  slot: Make/Model
+  value: Nissan NV1500 Cargo
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make Year
+  value: '2014'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Color
+  value: yellow
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Traffic Signal
+  value: Yellow Light
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Description of Lanes
+  value: Shoulder
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Num of Lanes
+  value: 4+
+  mandatory_value: true
+- domain: DriverActions
+  slot: Horn
+  value: Unsure
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Policy Number
+  value: null
+  mandatory_value: false
+- domain: TrafficEnvironment
+  slot: Traffic Flow
+  value: Two-Way
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Road Condition
+  value: Flat
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Weather Visibility
+  value: Unsure
+  mandatory_value: true
+- domain: DriverActions
+  slot: Distractions
+  value: Other
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Airbag Deployed
+  value: Unsure
+  mandatory_value: true
+- domain: DriverActions
+  slot: Brake
+  value: Unsure
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Subjective Fault
+  value: Other Driver
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Medical Treatment
+  value: Hospitalization
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Towed
+  value: Unsure
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Email Address
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Tickets Citations
+  value: No Party Cited
+  mandatory_value: true
+- domain: Evidences
+  slot: Police Department Name
+  value: Philadelphia Police Department
+  mandatory_value: false
+- domain: Evidences
+  slot: Police Report Number
+  value: null
+  mandatory_value: false
+- domain: InjuryDetails
+  slot: Body Part Injured
+  value: Head
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Injury Type
+  value: Other
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Obstructions to View
+  value: 'No'
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Traffic Condition
+  value: Moderate
+  mandatory_value: true
+story_other_driver_tuples:
+- domain: Adjuster
+  slot: Permission to Record
+  value: 'Yes'
+  mandatory_value: true
+- domain: ContactInfo
+  slot: First Name
+  value: James
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Last Name
+  value: Mccloud
+  mandatory_value: true
+- domain: DriverActions
+  slot: Car Motion
+  value: Traveling Forward, Other
+  mandatory_value: true
+- domain: DriverActions
+  slot: Speed
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Police Report
+  value: 'No'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Damage Part
+  value: Unsure
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Passengers
+  value: Unsure
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Witnesses
+  value: 'Yes'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make/Model
+  value: GMC Yukon
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make Year
+  value: '2013'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Color
+  value: brown
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Traffic Signal
+  value: Green Light
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Description of Lanes
+  value: Turn Lane
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Policy Number
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Children Involved
+  value: 'No'
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Medical Treatment
+  value: X-Ray
+  mandatory_value: true
+- domain: DriverActions
+  slot: Distractions
+  value: Animals
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Injury Type
+  value: Cut Scratch
+  mandatory_value: true
+- domain: Adjuster
+  slot: Explain Coverages
+  value: Collision insurance, Uninsured/underinsured motorist coverage, MedPay
+  mandatory_value: false
+- domain: Adjuster
+  slot: Set up Rental
+  value: 'No'
+  mandatory_value: true
+- domain: DriverActions
+  slot: Turn Signal
+  value: 'No'
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Home Address
+  value: 329 Richard Stravenue Suite 919, Atlanta, Georgia 59723
+  mandatory_value: true
+- domain: DriverActions
+  slot: Horn
+  value: Unsure
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Obstructions to View
+  value: Unsure
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Phone Number
+  value: 0900943831
+  mandatory_value: true
+- domain: Evidences
+  slot: Tickets Citations
+  value: Multiple Parties Cited
+  mandatory_value: true
+- domain: Evidences
+  slot: Police Report Number
+  value: null
+  mandatory_value: false
+- domain: InjuryDetails
+  slot: Body Part Injured
+  value: Head
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Traffic Condition
+  value: Unsure
+  mandatory_value: true
+'[AccidentDetails_TUPLES]':
+- domain: AccidentDetails
+  slot: Accident Location
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Damage Part
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Passengers
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Witnesses
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Date of Accident
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Time of Accident
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Airbag Deployed
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Subjective Fault
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Towed
+  value: null
+  mandatory_value: true
+'[Adjuster_TUPLES]':
+- domain: Adjuster
+  slot: Permission to Record
+  value: null
+  mandatory_value: true
+'[ContactInfo_TUPLES]':
+- domain: ContactInfo
+  slot: First Name
+  value: Ruth
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Last Name
+  value: Martin
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Policy Number
+  value: null
+  mandatory_value: false
+- domain: ContactInfo
+  slot: Email Address
+  value: null
+  mandatory_value: false
+'[DriverActions_TUPLES]':
+- domain: DriverActions
+  slot: Car Motion
+  value: null
+  mandatory_value: true
+- domain: DriverActions
+  slot: Speed
+  value: null
+  mandatory_value: false
+- domain: DriverActions
+  slot: Horn
+  value: Unsure
+  mandatory_value: true
+- domain: DriverActions
+  slot: Distractions
+  value: null
+  mandatory_value: true
+- domain: DriverActions
+  slot: Brake
+  value: null
+  mandatory_value: true
+'[Evidences_TUPLES]':
+- domain: Evidences
+  slot: Police Report
+  value: null
+  mandatory_value: true
+- domain: Evidences
+  slot: Tickets Citations
+  value: null
+  mandatory_value: true
+- domain: Evidences
+  slot: Police Department Name
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Police Report Number
+  value: null
+  mandatory_value: false
+'[CarInfo_TUPLES]':
+- domain: CarInfo
+  slot: Make/Model
+  value: null
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make Year
+  value: null
+  mandatory_value: true
+- domain: CarInfo
+  slot: Color
+  value: null
+  mandatory_value: true
+'[TrafficEnvironment_TUPLES]':
+- domain: TrafficEnvironment
+  slot: Traffic Signal
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Description of Lanes
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Num of Lanes
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Traffic Flow
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Road Condition
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Weather Visibility
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Obstructions to View
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Traffic Condition
+  value: null
+  mandatory_value: true
+'[InjuryDetails_TUPLES]':
+- domain: InjuryDetails
+  slot: Medical Treatment
+  value: null
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Body Part Injured
+  value: null
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Injury Type
+  value: null
+  mandatory_value: true
+story_summaries:
+- 'Here are the information we have about the caller:'
+- 'ContactInfo: (First Name = Ruth), (Last Name = Martin)
+
+  DriverActions: (Car Motion = Turning, Backing, Stopped), (Horn = Unsure), (Distractions
+  = Other), (Brake = Unsure)
+
+  Evidences: (Police Report = Yes), (Tickets Citations = No Party Cited), (Police
+  Department Name = Philadelphia Police Department)
+
+  AccidentDetails: (Damage Part = Back), (Num of Passengers = 1), (Witnesses = Yes),
+  (Airbag Deployed = Unsure), (Subjective Fault = Other Driver), (Towed = Unsure)
+
+  CarInfo: (Color = yellow)
+
+  TrafficEnvironment: (Traffic Signal = Yellow Light), (Description of Lanes = Shoulder),
+  (Num of Lanes = 4+), (Traffic Flow = Two-Way), (Road Condition = Flat), (Weather
+  Visibility = Unsure), (Obstructions to View = No), (Traffic Condition = Moderate)
+
+  InjuryDetails: (Medical Treatment = Hospitalization), (Body Part Injured = Head),
+  (Injury Type = Other)'
+- 'Here are the information we have about the other driver:'
+- 'ContactInfo: (First Name = James), (Last Name = Mccloud), (Home Address = 329 Richard
+  Stravenue Suite 919, Atlanta, Georgia 59723), (Phone Number = 0900943831)
+
+  DriverActions: (Car Motion = Traveling Forward, Other), (Distractions = Animals),
+  (Turn Signal = No), (Horn = Unsure)
+
+  Evidences: (Police Report = No), (Tickets Citations = Multiple Parties Cited)
+
+  AccidentDetails: (Damage Part = Unsure), (Num of Passengers = Unsure), (Witnesses
+  = Yes), (Children Involved = No)
+
+  CarInfo: (Make/Model = GMC Yukon), (Make Year = 2013), (Color = brown)
+
+  TrafficEnvironment: (Traffic Signal = Green Light), (Description of Lanes = Turn
+  Lane), (Obstructions to View = Unsure), (Traffic Condition = Unsure)
+
+  InjuryDetails: (Medical Treatment = X-Ray), (Injury Type = Cut Scratch), (Body Part
+  Injured = Head)
+
+  Adjuster: (Explain Coverages = Collision insurance, Uninsured/underinsured motorist
+  coverage, MedPay), (Set up Rental = No)'
+- Use the information above to create a length and detail-enriched story about a car
+  accident in a highway.
+- Ensure the story cover how the crash happened.
+- No need to provide a summary of the story.
+- The story is around 1000 words.
+information_summaries:
+- 'Accident details: [AccidentDetails_TUPLES].'
+- 'Evidences of the car accident: [Evidences_TUPLES].'
+- 'Traffic condition: [TrafficEnvironment_TUPLES].'
+- 'Caller''s driver action: [DriverActions_TUPLES].'
+- 'Caller''s car information: [CarInfo_TUPLES].'
+- 'Caller''s injury details: [InjuryDetails_TUPLES].'
+step_summaries:
+- Have role play car accident claim call. One person is an agent [AGENT] from a car
+  insurance company and the other is the caller [USER] who wants to file a claim.
+- At beginning of the call, have [AGENT] ask for [USER]'s permission to record the
+  call and proceeds with the conversation.
+- Within some <p> </p>, have simulate poor phone connection. Have [AGENT] and [USER]
+  can not hear each other and need to repeat what they said.
+- Have [AGENT] verify [USER] personal information to access account information at
+  the beginning of the call.
+- Have [USER] describe the car accident by using story and tuples above to describe
+  the accident.
+- Have [AGENT] confirm new information with [USER] during the call to ensure consistency.
+- Have [AGENT] and [USER] engage in small talk with each other.
+- Have [AGENT] explain the insurance coverages to [USER].
+user_personality: '[USER] is evasive, hesitant to provide information or answer questions
+  about the accident, may be trying to conceal something.'
+agent_personality: '[AGENT] is conversational, personable, patient, empathetic, sympathetic
+  and professional.'
+instructions:
+- Use the story, information, and personality to create a role play script and follow
+  the steps.
+story:
+- Ruth had been driving on the four-lane highway for about 30 minutes. The yellow
+  light ahead of her signaled that she needed to turn left to get to the hospital
+  where her husband was checked in. Ruth double-checked the traffic flow before making
+  a left. As she began her turn, she noticed a brown GMC Yukon headed straight for
+  her.
+- The other driver, James Mccloud, was traveling forward and had failed to see Ruth's
+  car turning left. Ruth hit the brakes as soon as she saw James approaching, but
+  it was too late. James slammed into the back of Ruth's yellow car, sending it spinning
+  out of control.
+- Ruth was frightened and disoriented as the impact of the crash rattled her head.
+  She felt a sharp pain in her forehead and blood trickling down her face. All she
+  could think of was her husband's condition and how she had to reach him immediately.
+- As cars screeched to a halt all around them, Ruth tried to gather her thoughts while
+  surveying the damage to her car. The back of her car had caved in, and it was clear
+  that it was not drivable any longer. As James got out of his car, Ruth could see
+  that he too was visibly shaken by the accident.
+- The police were called by another driver who witnessed the crash and stopped to
+  help and direct traffic. They arrived on the scene shortly, but before they could
+  ask any questions, Ruth frantically explained that she needed to get to the hospital
+  urgently.
+- The police officers were kind and took quick action to ensure that Ruth's needs
+  were met. They guided traffic around the accident site and assisted with making
+  arrangements for a tow truck. As they waited for the tow truck, Ruth saw that there
+  were several witnesses who were willing to share their accounts of what happened.
+  One witness even shared a dashcam video that clearly showed that James was distracted
+  by an animal on the road at the time of the crash.
+- Despite the evidence against him, James disputed fault and refused to admit that
+  he was responsible for the accident. The police officers could not issue a citation
+  as they did not witness the accident, but they gave Ruth a copy of the police report
+  for her insurance claim.
+- It was a traumatic experience for Ruth, and she was worried about the mounting expenses
+  it would take to cover her medical bills and repair her car. Fortunately, she had
+  collision insurance, uninsured/underinsured motorist coverage, and MedPay. These
+  coverages helped ease the financial burden that comes with an unexpected accident.
+- Ruth was taken to the

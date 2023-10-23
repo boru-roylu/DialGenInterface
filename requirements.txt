@@ -1,0 +1,16 @@
+redis
+celery
+flask
+openai
+httplib2
+beautifulsoup4
+python-decouple
+PyYAML
+pandas
+fuzzywuzzy
+dataclasses_json
+python-Levenshtein
+lxml
+Faker
+gender-guesser
+openpyxl

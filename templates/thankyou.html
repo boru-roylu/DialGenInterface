@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finish</title>
+
+    <!-- Our custom selection script -->
+    <script src="static/js/utils.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/spinner.css') }}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+      input.larger {
+        width: 20px;
+        height: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="overlay">
+      <div class="cv-spinner">
+        <span class="spinner"></span>
+        <p>Loading</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Done!</h1>
+      <h4>You finish the task "{{ task_id }}"!</h4>
+      <h4 id="total_time"></h4>
+      <h4>Thank you for your time and efforts, {{ worker_name }}!</h4>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="container">
+      <h4>Download the raw or Excel files without any preprocessing.</h4>
+    </div>
+
+    <div class="container my-2 py-2">
+      <div class="row" align="center">
+        <div class="col" styple="height: 20px; text-align: center">
+          <button onclick="Download('raw')" class="btn btn-success my-2">
+            Download Raw File
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-2 py-2">
+      <div class="row" align="center">
+        <div class="col" styple="height: 20px; text-align: center">
+          <button onclick="Download('xlsx')" class="btn btn-success my-2">
+            Download Excel File
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h4>Download the preprocessed files for modeling.</h4>
+    </div>
+
+    <div class="container my-2 py-2">
+      <div class="row" align="center">
+        <div class="col" styple="height: 20px; text-align: center">
+          <input class="checkbox larger" type="checkbox" id="replace_names" />
+          Replace Mentioned Names (Select this if you want to replace the
+          mentioned names in preprocessed files with the randomly sampled
+          names.)
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-2 py-2">
+      <div class="row" align="center">
+        <div class="col" styple="height: 20px; text-align: center">
+          <button onclick="Download('tlb')" class="btn btn-success my-2">
+            Download TLB File
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-2 py-2">
+      <div class="row" align="center">
+        <div class="col" styple="height: 20px; text-align: center">
+          <button onclick="Download('dst')" class="btn btn-success my-2">
+            Download DST File
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-2 py-2">
+      <div class="row" align="center">
+        <div class="col" styple="height: 20px; text-align: center">
+          <button
+            onclick="Download('state_change')"
+            class="btn btn-success my-2"
+          >
+            Download State Change File
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var total_time = JSON.parse("{{ total_time_spent | tojson | safe}}");
+    AddTimeSpentForThankyou(total_time);
+
+    function Download(task) {
+      const queryString = window.location.search;
+      const url_params = new URLSearchParams(queryString);
+      let task_id = url_params.get("task_id");
+      let worker_id = url_params.get("worker_id");
+      const cb = document.querySelector("#replace_names");
+      console.log(cb.checked);
+      let xhttp = new XMLHttpRequest();
+
+      if (task === "raw") {
+        download_file_name = `${task_id}_${worker_id}_raw.yaml`;
+      } else if (task === "xlsx") {
+        download_file_name = `${task_id}_${worker_id}_raw.xlsx`;
+      } else {
+        if (cb.checked) {
+          download_file_name = `${task_id}_${worker_id}_${task}_replace_names.json`;
+        } else {
+          download_file_name = `${task_id}_${worker_id}_${task}.json`;
+        }
+      }
+
+      xhttp.onreadystatechange = function () {
+        if (xhttp.status === 200 && xhttp.readyState === 4) {
+          let blob = new Blob([xhttp.response], { type: "text/plain" });
+          let url = window.URL.createObjectURL(blob);
+          let link = document.createElement("a");
+          link.href = url;
+          link.download = download_file_name;
+          link.style.display = "none";
+          document.body.appendChild(link);
+          link.click();
+          window.URL.revokeObjectURL(url);
+          document.body.removeChild(link);
+        }
+      };
+      xhttp.open(
+        "GET",
+        `/download?task_id=${task_id}&worker_id=${worker_id}&task=${task}&replace_names=${cb.checked}`,
+        true
+      );
+      xhttp.responseType = "blob";
+      xhttp.send();
+    }
+  </script>
+</html>

@@ -1,0 +1,1362 @@
+{
+    "schema": [
+        {
+            "id": "0",
+            "val": "AccidentDetails",
+            "color": "#ff6961",
+            "slots": [
+                {
+                    "id": "0-0",
+                    "val": "Damage Part",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "0-0-0",
+                            "val": "Front"
+                        },
+                        {
+                            "id": "0-0-1",
+                            "val": "Right"
+                        },
+                        {
+                            "id": "0-0-2",
+                            "val": "Back"
+                        },
+                        {
+                            "id": "0-0-3",
+                            "val": "Left"
+                        },
+                        {
+                            "id": "0-0-4",
+                            "val": "Front Right"
+                        },
+                        {
+                            "id": "0-0-5",
+                            "val": "Front Left"
+                        },
+                        {
+                            "id": "0-0-6",
+                            "val": "Back Left"
+                        },
+                        {
+                            "id": "0-0-7",
+                            "val": "Back Right"
+                        },
+                        {
+                            "id": "0-0-8",
+                            "val": "Other"
+                        },
+                        {
+                            "id": "0-0-9",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "0-1",
+                    "val": "Accident Location",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "0-1-0",
+                            "val": "Parking Lot"
+                        },
+                        {
+                            "id": "0-1-1",
+                            "val": "Driveway"
+                        },
+                        {
+                            "id": "0-1-2",
+                            "val": "Highway"
+                        },
+                        {
+                            "id": "0-1-3",
+                            "val": "Roadway"
+                        },
+                        {
+                            "id": "0-1-4",
+                            "val": "Intersection"
+                        },
+                        {
+                            "id": "0-1-5",
+                            "val": "Other"
+                        }
+                    ]
+                },
+                {
+                    "id": "0-2",
+                    "val": "Num of Passengers",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "0-2-0",
+                            "val": "0"
+                        },
+                        {
+                            "id": "0-2-1",
+                            "val": "1"
+                        },
+                        {
+                            "id": "0-2-2",
+                            "val": "2+"
+                        },
+                        {
+                            "id": "0-2-3",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "0-3",
+                    "val": "Witnesses",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "0-3-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "0-3-1",
+                            "val": "No"
+                        },
+                        {
+                            "id": "0-3-2",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "0-4",
+                    "val": "Num of Involved Cars",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "0-4-0",
+                            "val": "1"
+                        },
+                        {
+                            "id": "0-4-1",
+                            "val": "2"
+                        },
+                        {
+                            "id": "0-4-2",
+                            "val": "3"
+                        },
+                        {
+                            "id": "0-4-3",
+                            "val": "4+"
+                        },
+                        {
+                            "id": "0-4-4",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "0-5",
+                    "val": "Children Involved",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "0-5-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "0-5-1",
+                            "val": "No"
+                        },
+                        {
+                            "id": "0-5-2",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "0-6",
+                    "val": "Airbag Deployed",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "0-6-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "0-6-1",
+                            "val": "No"
+                        },
+                        {
+                            "id": "0-6-2",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "0-7",
+                    "val": "Towed",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "0-7-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "0-7-1",
+                            "val": "No"
+                        },
+                        {
+                            "id": "0-7-2",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "0-8",
+                    "val": "Pedestrians Involved",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "0-8-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "0-8-1",
+                            "val": "No"
+                        },
+                        {
+                            "id": "0-8-2",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "0-9",
+                    "val": "Date of Accident",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "0-10",
+                    "val": "Time of Accident",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "0-11",
+                    "val": "Subjective Fault",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "0-11-0",
+                            "val": "Caller"
+                        },
+                        {
+                            "id": "0-11-1",
+                            "val": "Other Driver"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1",
+            "val": "Adjuster",
+            "color": "#ffb480",
+            "slots": [
+                {
+                    "id": "1-0",
+                    "val": "Explain Coverages",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "1-1",
+                    "val": "Permission to Record",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "1-1-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "1-1-1",
+                            "val": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "1-2",
+                    "val": "Set up Inspection",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "1-2-0",
+                            "val": "Photo Claim"
+                        },
+                        {
+                            "id": "1-2-1",
+                            "val": "Field Assignment"
+                        }
+                    ]
+                },
+                {
+                    "id": "1-3",
+                    "val": "Set up Rental",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "1-3-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "1-3-1",
+                            "val": "No"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "val": "CarInfo",
+            "color": "#f8f38d",
+            "slots": [
+                {
+                    "id": "2-0",
+                    "val": "Make/Model",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "2-1",
+                    "val": "Make Year",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "2-2",
+                    "val": "Color",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "2-3",
+                    "val": "Car Mileage",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "2-4",
+                    "val": "Rideshare (Uber/Lyft)",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "2-4-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "2-4-1",
+                            "val": "No"
+                        },
+                        {
+                            "id": "2-4-2",
+                            "val": "Unsure"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "val": "ContactInfo",
+            "color": "#42d6a4",
+            "slots": [
+                {
+                    "id": "3-0",
+                    "val": "First Name",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "3-1",
+                    "val": "Last Name",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "3-2",
+                    "val": "Home Address",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "3-3",
+                    "val": "Phone Number",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "3-4",
+                    "val": "Email Address",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "3-5",
+                    "val": "Policy Number",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "3-6",
+                    "val": "Date of Birth",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "val": "DriverActions",
+            "color": "#08cad1",
+            "slots": [
+                {
+                    "id": "4-0",
+                    "val": "Car Motion",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "4-0-0",
+                            "val": "Traveling Forward"
+                        },
+                        {
+                            "id": "4-0-1",
+                            "val": "Backing"
+                        },
+                        {
+                            "id": "4-0-2",
+                            "val": "Turning"
+                        },
+                        {
+                            "id": "4-0-3",
+                            "val": "Changing Lanes"
+                        },
+                        {
+                            "id": "4-0-4",
+                            "val": "Stopped"
+                        },
+                        {
+                            "id": "4-0-5",
+                            "val": "Other"
+                        },
+                        {
+                            "id": "4-0-6",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "4-1",
+                    "val": "Speed",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "4-2",
+                    "val": "Distractions",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "4-2-0",
+                            "val": "Cellphone"
+                        },
+                        {
+                            "id": "4-2-1",
+                            "val": "Animals"
+                        },
+                        {
+                            "id": "4-2-2",
+                            "val": "Smoking"
+                        },
+                        {
+                            "id": "4-2-3",
+                            "val": "Passengers"
+                        },
+                        {
+                            "id": "4-2-4",
+                            "val": "Traffic"
+                        },
+                        {
+                            "id": "4-2-5",
+                            "val": "Eating"
+                        },
+                        {
+                            "id": "4-2-6",
+                            "val": "Not Paying Attention"
+                        },
+                        {
+                            "id": "4-2-7",
+                            "val": "Other"
+                        },
+                        {
+                            "id": "4-2-8",
+                            "val": "Unsure"
+                        },
+                        {
+                            "id": "4-2-9",
+                            "val": "No Distraction"
+                        }
+                    ]
+                },
+                {
+                    "id": "4-3",
+                    "val": "Brake",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "4-3-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "4-3-1",
+                            "val": "No"
+                        },
+                        {
+                            "id": "4-3-2",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "4-4",
+                    "val": "Horn",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "4-4-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "4-4-1",
+                            "val": "No"
+                        },
+                        {
+                            "id": "4-4-2",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "4-5",
+                    "val": "Turn Signal",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "4-5-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "4-5-1",
+                            "val": "No"
+                        },
+                        {
+                            "id": "4-5-2",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "4-6",
+                    "val": "Traffic Controls Obeyed",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "4-6-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "4-6-1",
+                            "val": "No"
+                        },
+                        {
+                            "id": "4-6-2",
+                            "val": "Unsure"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "val": "Evidences",
+            "color": "#59adf6",
+            "slots": [
+                {
+                    "id": "5-0",
+                    "val": "Police Report",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "5-0-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "5-0-1",
+                            "val": "No"
+                        },
+                        {
+                            "id": "5-0-2",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "5-1",
+                    "val": "Police Department Name",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "5-2",
+                    "val": "Pictures",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "5-2-0",
+                            "val": "At Scene"
+                        },
+                        {
+                            "id": "5-2-1",
+                            "val": "After Accident"
+                        },
+                        {
+                            "id": "5-2-2",
+                            "val": "No Picture"
+                        },
+                        {
+                            "id": "5-2-3",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "5-3",
+                    "val": "Tickets Citations",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "5-3-0",
+                            "val": "Caller Party Cited"
+                        },
+                        {
+                            "id": "5-3-1",
+                            "val": "Other Party Cited"
+                        },
+                        {
+                            "id": "5-3-2",
+                            "val": "No Party Cited"
+                        },
+                        {
+                            "id": "5-3-3",
+                            "val": "Multiple Parties Cited"
+                        },
+                        {
+                            "id": "5-3-4",
+                            "val": "Unsure"
+                        },
+                        {
+                            "id": "5-3-5",
+                            "val": "No Ticket"
+                        }
+                    ]
+                },
+                {
+                    "id": "5-4",
+                    "val": "Police Report Number",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "5-5",
+                    "val": "Skid Marks",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "5-5-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "5-5-1",
+                            "val": "No"
+                        },
+                        {
+                            "id": "5-5-2",
+                            "val": "Unsure"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "val": "InjuryDetails",
+            "color": "#5BC236",
+            "slots": [
+                {
+                    "id": "6-0",
+                    "val": "Ambulance",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "6-0-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "6-0-1",
+                            "val": "No"
+                        },
+                        {
+                            "id": "6-0-2",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "6-1",
+                    "val": "Body Part Injured",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "6-1-0",
+                            "val": "Head"
+                        },
+                        {
+                            "id": "6-1-1",
+                            "val": "Neck"
+                        },
+                        {
+                            "id": "6-1-2",
+                            "val": "Shoulder"
+                        },
+                        {
+                            "id": "6-1-3",
+                            "val": "Chest"
+                        },
+                        {
+                            "id": "6-1-4",
+                            "val": "Abdomen"
+                        },
+                        {
+                            "id": "6-1-5",
+                            "val": "Back"
+                        },
+                        {
+                            "id": "6-1-6",
+                            "val": "Limb"
+                        },
+                        {
+                            "id": "6-1-7",
+                            "val": "Other"
+                        }
+                    ]
+                },
+                {
+                    "id": "6-2",
+                    "val": "Injury Type",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "6-2-0",
+                            "val": "Bruise"
+                        },
+                        {
+                            "id": "6-2-1",
+                            "val": "Broken Fracture"
+                        },
+                        {
+                            "id": "6-2-2",
+                            "val": "Cut Scratch"
+                        },
+                        {
+                            "id": "6-2-3",
+                            "val": "Bleeding"
+                        },
+                        {
+                            "id": "6-2-4",
+                            "val": "Strain Sprain"
+                        },
+                        {
+                            "id": "6-2-5",
+                            "val": "Sore"
+                        },
+                        {
+                            "id": "6-2-6",
+                            "val": "Other"
+                        },
+                        {
+                            "id": "6-2-7",
+                            "val": "No Injury"
+                        }
+                    ]
+                },
+                {
+                    "id": "6-3",
+                    "val": "Medical Treatment",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "6-3-0",
+                            "val": "MRI"
+                        },
+                        {
+                            "id": "6-3-1",
+                            "val": "Surgery"
+                        },
+                        {
+                            "id": "6-3-2",
+                            "val": "Cat Scan"
+                        },
+                        {
+                            "id": "6-3-3",
+                            "val": "Hospitalization"
+                        },
+                        {
+                            "id": "6-3-4",
+                            "val": "ER"
+                        },
+                        {
+                            "id": "6-3-5",
+                            "val": "X-Ray"
+                        },
+                        {
+                            "id": "6-3-6",
+                            "val": "Other"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "val": "TrafficEnvironment",
+            "color": "#c780e8",
+            "slots": [
+                {
+                    "id": "7-0",
+                    "val": "Weather Visibility",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "7-0-0",
+                            "val": "Clear"
+                        },
+                        {
+                            "id": "7-0-1",
+                            "val": "Cloudy"
+                        },
+                        {
+                            "id": "7-0-2",
+                            "val": "Rainy"
+                        },
+                        {
+                            "id": "7-0-3",
+                            "val": "Snowy"
+                        },
+                        {
+                            "id": "7-0-4",
+                            "val": "Foggy"
+                        },
+                        {
+                            "id": "7-0-5",
+                            "val": "Windy"
+                        },
+                        {
+                            "id": "7-0-6",
+                            "val": "Other"
+                        },
+                        {
+                            "id": "7-0-7",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "7-1",
+                    "val": "Obstructions to View",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "7-1-0",
+                            "val": "Yes"
+                        },
+                        {
+                            "id": "7-1-1",
+                            "val": "No"
+                        },
+                        {
+                            "id": "7-1-2",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "7-2",
+                    "val": "Road Condition",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "7-2-0",
+                            "val": "Dry"
+                        },
+                        {
+                            "id": "7-2-1",
+                            "val": "Wet"
+                        },
+                        {
+                            "id": "7-2-2",
+                            "val": "Slippery"
+                        },
+                        {
+                            "id": "7-2-3",
+                            "val": "Debris"
+                        },
+                        {
+                            "id": "7-2-4",
+                            "val": "Potholes"
+                        },
+                        {
+                            "id": "7-2-5",
+                            "val": "Straight"
+                        },
+                        {
+                            "id": "7-2-6",
+                            "val": "Curved"
+                        },
+                        {
+                            "id": "7-2-7",
+                            "val": "Tunnel"
+                        },
+                        {
+                            "id": "7-2-8",
+                            "val": "Steep Incline"
+                        },
+                        {
+                            "id": "7-2-9",
+                            "val": "Flat"
+                        },
+                        {
+                            "id": "7-2-10",
+                            "val": "Other"
+                        },
+                        {
+                            "id": "7-2-11",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "7-3",
+                    "val": "Traffic Signal",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "7-3-0",
+                            "val": "Stop Sign"
+                        },
+                        {
+                            "id": "7-3-1",
+                            "val": "Yield Sign"
+                        },
+                        {
+                            "id": "7-3-2",
+                            "val": "Green Light"
+                        },
+                        {
+                            "id": "7-3-3",
+                            "val": "Yellow Light"
+                        },
+                        {
+                            "id": "7-3-4",
+                            "val": "Red Light"
+                        },
+                        {
+                            "id": "7-3-5",
+                            "val": "Other"
+                        },
+                        {
+                            "id": "7-3-6",
+                            "val": "Unsure"
+                        },
+                        {
+                            "id": "7-3-7",
+                            "val": "No Signal Or Sign"
+                        }
+                    ]
+                },
+                {
+                    "id": "7-4",
+                    "val": "Description of Lanes",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "7-4-0",
+                            "val": "Normal"
+                        },
+                        {
+                            "id": "7-4-1",
+                            "val": "Turn Lane"
+                        },
+                        {
+                            "id": "7-4-2",
+                            "val": "Shoulder"
+                        },
+                        {
+                            "id": "7-4-3",
+                            "val": "Other"
+                        },
+                        {
+                            "id": "7-4-4",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "7-5",
+                    "val": "Num of Lanes",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "7-5-0",
+                            "val": "1"
+                        },
+                        {
+                            "id": "7-5-1",
+                            "val": "2"
+                        },
+                        {
+                            "id": "7-5-2",
+                            "val": "3"
+                        },
+                        {
+                            "id": "7-5-3",
+                            "val": "4+"
+                        },
+                        {
+                            "id": "7-5-4",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "7-6",
+                    "val": "Traffic Condition",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "7-6-0",
+                            "val": "Heavy"
+                        },
+                        {
+                            "id": "7-6-1",
+                            "val": "Moderate"
+                        },
+                        {
+                            "id": "7-6-2",
+                            "val": "Light"
+                        },
+                        {
+                            "id": "7-6-3",
+                            "val": "Other"
+                        },
+                        {
+                            "id": "7-6-4",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "7-7",
+                    "val": "Speed Limit",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "7-8",
+                    "val": "Traffic Flow",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "7-8-0",
+                            "val": "One-Way"
+                        },
+                        {
+                            "id": "7-8-1",
+                            "val": "Two-Way"
+                        },
+                        {
+                            "id": "7-8-2",
+                            "val": "Other"
+                        },
+                        {
+                            "id": "7-8-3",
+                            "val": "Unsure"
+                        }
+                    ]
+                },
+                {
+                    "id": "7-9",
+                    "val": "Parking Lot Type",
+                    "categorical_value": true,
+                    "abstractive_value": false,
+                    "extractive_value": false,
+                    "time_value": false,
+                    "values": [
+                        {
+                            "id": "7-9-0",
+                            "val": "Angled"
+                        },
+                        {
+                            "id": "7-9-1",
+                            "val": "Straight"
+                        },
+                        {
+                            "id": "7-9-2",
+                            "val": "Other"
+                        },
+                        {
+                            "id": "7-9-3",
+                            "val": "Unsure"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "val": "Trip",
+            "color": "#f66d9b",
+            "slots": [
+                {
+                    "id": "8-0",
+                    "val": "Destination of Trip",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "8-1",
+                    "val": "Purpose of Trip",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                },
+                {
+                    "id": "8-2",
+                    "val": "Origin of Trip",
+                    "categorical_value": false,
+                    "abstractive_value": false,
+                    "extractive_value": true,
+                    "time_value": false,
+                    "values": []
+                }
+            ]
+        }
+    ],
+    "referent_schema": [
+        {
+            "id": 0,
+            "val": "Global",
+            "color": "#f9800"
+        },
+        {
+            "id": 1,
+            "val": "Caller",
+            "color": "#f9800"
+        },
+        {
+            "id": 2,
+            "val": "Other Driver",
+            "color": "#f9800"
+        },
+        {
+            "id": 3,
+            "val": "Caller's Passenger",
+            "color": "#f9800"
+        },
+        {
+            "id": 4,
+            "val": "Other Driver's Passenger",
+            "color": "#f9800"
+        },
+        {
+            "id": 5,
+            "val": "Witness",
+            "color": "#f9800"
+        }
+    ]
+}

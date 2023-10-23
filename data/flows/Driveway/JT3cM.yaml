@@ -1,0 +1,481 @@
+role_to_party:
+  agent: Allan
+  user: Lawrence
+story_caller_tuples:
+- domain: AccidentDetails
+  slot: Accident Location
+  value: null
+  mandatory_value: true
+- domain: Adjuster
+  slot: Permission to Record
+  value: 'Yes'
+  mandatory_value: true
+- domain: ContactInfo
+  slot: First Name
+  value: Lawrence
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Last Name
+  value: Butler
+  mandatory_value: true
+- domain: DriverActions
+  slot: Car Motion
+  value: Other, Backing, Turning
+  mandatory_value: true
+- domain: DriverActions
+  slot: Speed
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Police Report
+  value: 'No'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Damage Part
+  value: Front Right
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Passengers
+  value: '1'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Witnesses
+  value: Unsure
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Date of Accident
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Time of Accident
+  value: null
+  mandatory_value: false
+- domain: CarInfo
+  slot: Make/Model
+  value: GMC Yukon
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make Year
+  value: '2003'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Color
+  value: yellow
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Injury Type
+  value: Strain Sprain
+  mandatory_value: true
+- domain: Evidences
+  slot: Police Department Name
+  value: Denver Police Department
+  mandatory_value: false
+- domain: DriverActions
+  slot: Horn
+  value: 'Yes'
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Home Address
+  value: 4653 Christine Viaduct Suite 692, Denver, Colorado 81587
+  mandatory_value: true
+- domain: Adjuster
+  slot: Set up Rental
+  value: 'No'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Rideshare (Uber/Lyft)
+  value: 'No'
+  mandatory_value: true
+- domain: Adjuster
+  slot: Set up Inspection
+  value: Photo Claim
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Children Involved
+  value: 'Yes'
+  mandatory_value: true
+- domain: Adjuster
+  slot: Explain Coverages
+  value: Roadside assistance, Uninsured/underinsured motorist coverage, Gap insurance
+  mandatory_value: false
+- domain: InjuryDetails
+  slot: Body Part Injured
+  value: Head
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Involved Cars
+  value: '1'
+  mandatory_value: true
+- domain: Trip
+  slot: Destination of Trip
+  value: bank
+  mandatory_value: false
+- domain: ContactInfo
+  slot: Phone Number
+  value: +1-705-766-5036
+  mandatory_value: true
+- domain: Evidences
+  slot: Tickets Citations
+  value: No Ticket
+  mandatory_value: true
+- domain: Evidences
+  slot: Police Report Number
+  value: null
+  mandatory_value: false
+- domain: InjuryDetails
+  slot: Medical Treatment
+  value: Cat Scan
+  mandatory_value: true
+- domain: Trip
+  slot: Purpose of Trip
+  value: null
+  mandatory_value: false
+- domain: Trip
+  slot: Origin of Trip
+  value: train station
+  mandatory_value: false
+story_other_driver_tuples:
+- domain: Adjuster
+  slot: Permission to Record
+  value: 'Yes'
+  mandatory_value: true
+- domain: ContactInfo
+  slot: First Name
+  value: Richard
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Last Name
+  value: Hunter
+  mandatory_value: true
+- domain: DriverActions
+  slot: Car Motion
+  value: Backing, Other
+  mandatory_value: true
+- domain: DriverActions
+  slot: Speed
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Police Report
+  value: Unsure
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Damage Part
+  value: Front Left
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Passengers
+  value: '1'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Witnesses
+  value: 'Yes'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make/Model
+  value: Porsche 911
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make Year
+  value: '2000'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Color
+  value: beige
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Body Part Injured
+  value: Neck
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Phone Number
+  value: 001-068-516-8137
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Medical Treatment
+  value: X-Ray
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Obstructions to View
+  value: Unsure
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Policy Number
+  value: null
+  mandatory_value: false
+- domain: Adjuster
+  slot: Set up Inspection
+  value: Field Assignment
+  mandatory_value: true
+- domain: Evidences
+  slot: Tickets Citations
+  value: No Ticket
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Children Involved
+  value: Unsure
+  mandatory_value: true
+- domain: Evidences
+  slot: Police Report Number
+  value: null
+  mandatory_value: false
+- domain: ContactInfo
+  slot: Home Address
+  value: 1279 Mitchell Ford Apt. 508, Philadelphia, Pennsylvania 75370
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Injury Type
+  value: Cut Scratch
+  mandatory_value: true
+'[AccidentDetails_TUPLES]':
+- domain: AccidentDetails
+  slot: Accident Location
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Damage Part
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Passengers
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Witnesses
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Date of Accident
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Time of Accident
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Children Involved
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Involved Cars
+  value: null
+  mandatory_value: true
+'[Adjuster_TUPLES]':
+- domain: Adjuster
+  slot: Permission to Record
+  value: 'Yes'
+  mandatory_value: true
+- domain: Adjuster
+  slot: Set up Rental
+  value: null
+  mandatory_value: true
+- domain: Adjuster
+  slot: Set up Inspection
+  value: null
+  mandatory_value: true
+- domain: Adjuster
+  slot: Explain Coverages
+  value: null
+  mandatory_value: false
+'[ContactInfo_TUPLES]':
+- domain: ContactInfo
+  slot: First Name
+  value: Lawrence
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Last Name
+  value: Butler
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Home Address
+  value: 4653 Christine Viaduct Suite 692, Denver, Colorado 81587
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Phone Number
+  value: +1-705-766-5036
+  mandatory_value: true
+'[DriverActions_TUPLES]':
+- domain: DriverActions
+  slot: Car Motion
+  value: null
+  mandatory_value: true
+- domain: DriverActions
+  slot: Speed
+  value: null
+  mandatory_value: false
+- domain: DriverActions
+  slot: Horn
+  value: null
+  mandatory_value: true
+'[Evidences_TUPLES]':
+- domain: Evidences
+  slot: Police Report
+  value: null
+  mandatory_value: true
+- domain: Evidences
+  slot: Police Department Name
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Tickets Citations
+  value: null
+  mandatory_value: true
+- domain: Evidences
+  slot: Police Report Number
+  value: null
+  mandatory_value: false
+'[CarInfo_TUPLES]':
+- domain: CarInfo
+  slot: Make/Model
+  value: null
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make Year
+  value: null
+  mandatory_value: true
+- domain: CarInfo
+  slot: Color
+  value: null
+  mandatory_value: true
+- domain: CarInfo
+  slot: Rideshare (Uber/Lyft)
+  value: null
+  mandatory_value: true
+'[InjuryDetails_TUPLES]':
+- domain: InjuryDetails
+  slot: Injury Type
+  value: null
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Body Part Injured
+  value: Head
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Medical Treatment
+  value: null
+  mandatory_value: true
+'[Trip_TUPLES]':
+- domain: Trip
+  slot: Destination of Trip
+  value: null
+  mandatory_value: false
+- domain: Trip
+  slot: Purpose of Trip
+  value: null
+  mandatory_value: false
+- domain: Trip
+  slot: Origin of Trip
+  value: null
+  mandatory_value: false
+story_summaries:
+- 'Here are the information we have about the caller:'
+- 'ContactInfo: (First Name = Lawrence), (Last Name = Butler), (Home Address = 4653
+  Christine Viaduct Suite 692, Denver, Colorado 81587), (Phone Number = +1-705-766-5036)
+
+  DriverActions: (Car Motion = Other, Backing, Turning), (Horn = Yes)
+
+  Evidences: (Police Report = No), (Police Department Name = Denver Police Department),
+  (Tickets Citations = No Ticket)
+
+  AccidentDetails: (Damage Part = Front Right), (Num of Passengers = 1), (Witnesses
+  = Unsure), (Children Involved = Yes), (Num of Involved Cars = 1)
+
+  CarInfo: (Color = yellow), (Rideshare (Uber/Lyft) = No)
+
+  InjuryDetails: (Injury Type = Strain Sprain), (Body Part Injured = Head), (Medical
+  Treatment = Cat Scan)
+
+  Adjuster: (Set up Rental = No), (Set up Inspection = Photo Claim), (Explain Coverages
+  = Roadside assistance, Uninsured/underinsured motorist coverage, Gap insurance)
+
+  Trip: (Destination of Trip = bank), (Origin of Trip = train station)'
+- 'Here are the information we have about the other driver:'
+- 'ContactInfo: (First Name = Richard), (Last Name = Hunter), (Phone Number = 001-068-516-8137),
+  (Home Address = 1279 Mitchell Ford Apt. 508, Philadelphia, Pennsylvania 75370)
+
+  DriverActions: (Car Motion = Backing, Other)
+
+  Evidences: (Police Report = Unsure), (Tickets Citations = No Ticket)
+
+  AccidentDetails: (Damage Part = Front Left), (Num of Passengers = 1), (Witnesses
+  = Yes), (Children Involved = Unsure)
+
+  CarInfo: (Make/Model = Porsche 911), (Make Year = 2000), (Color = beige)
+
+  InjuryDetails: (Body Part Injured = Neck), (Medical Treatment = X-Ray), (Injury
+  Type = Cut Scratch)
+
+  TrafficEnvironment: (Obstructions to View = Unsure)
+
+  Adjuster: (Set up Inspection = Field Assignment)'
+- Use the information above to create a length and detail-enriched story about a car
+  accident in a driveway.
+- Ensure the story cover how the crash happened.
+- No need to provide a summary of the story.
+- The story is around 1000 words.
+information_summaries:
+- 'Accident details: [AccidentDetails_TUPLES].'
+- 'Evidences of the car accident: [Evidences_TUPLES].'
+- 'Traffic condition: [TrafficEnvironment_TUPLES].'
+- 'Caller''s driver action: [DriverActions_TUPLES].'
+- 'Caller''s car information: [CarInfo_TUPLES].'
+- 'Caller''s injury details: [InjuryDetails_TUPLES].'
+step_summaries:
+- Have role play car accident claim call. One person is an agent [AGENT] from a car
+  insurance company and the other is the caller [USER] who wants to file a claim.
+- At beginning of the call, have [AGENT] ask for [USER]'s permission to record the
+  call and proceeds with the conversation.
+- Within some <p> </p>, have simulate poor phone connection. Have [AGENT] and [USER]
+  can not hear each other and need to repeat what they said.
+- Have [AGENT] verify [USER] personal information to access account information at
+  the beginning of the call.
+- Have [USER] describe the car accident by using story and tuples above to describe
+  the accident.
+- Have [AGENT] confirm new information with [USER] during the call to ensure consistency.
+- Have [AGENT] and [USER] engage in small talk with each other.
+- Have [AGENT] explain the insurance coverages to [USER].
+user_personality: '[USER] is analytical, focused on the details and logistics of the
+  claim process, may ask for precise information and explanations.'
+agent_personality: '[AGENT] is conversational, personable, patient, empathetic, sympathetic
+  and professional.'
+instructions:
+- Use the story, information, and personality to create a role play script and follow
+  the steps.
+story:
+- Lawrence Butler had just arrived home from a long day at work. He pulled into his
+  driveway, which was situated between two tall trees that made it hard to see the
+  neighboring properties. He put his car in park and was just about to get out when
+  he realized that he had forgotten to check his mailbox.
+- He put the car back in drive and began backing up slowly. At that moment, Richard
+  Hunter was driving down the street, trying to find the right house for his job.
+  He saw Lawrence's car backing out of the driveway and slowed down to give him room.
+- Lawrence continued to back up, but he didn't see Richard's Porsche 911 driving behind
+  him. Suddenly, there was a loud crunching sound as Lawrence's yellow sedan hit the
+  front left side of Richard's luxury car.
+- The impact caused Lawrence's car to jolt forward, and he immediately hit the horn
+  to alert anyone nearby. Thankfully, there were no pedestrians or other vehicles
+  on the street at the time.
+- Lawrence quickly got out of his car to check on Richard and assess the damage. Richard
+  also got out of his vehicle, and they both surveyed the scene.
+- There was significant damage to both vehicles with Lawrence's car's front right
+  side and Richard's Porsche's front left side being damaged badly. Lawrence had one
+  passenger in his car - his young daughter - who was shaken up but thankfully not
+  injured.
+- Richard had no passengers in his car at the time of the accident, but he had a few
+  witnesses who saw the accident happen from across the street. They ran over to offer
+  assistance and make sure everyone involved was okay.
+- Lawrence felt terrible about what had happened and apologized profusely to Richard
+  and his witnesses. They exchanged contact information, and Richard called the police
+  department to report the accident.
+- A few minutes later, a police officer arrived on the scene to assess what had happened.
+  Unfortunately, there were no cameras around to provide video evidence of the accident,
+  but both drivers and witnesses cooperated with the officer to give their accounts
+  of what had happened.
+- After the police officer had finished taking statements from everyone involved,
+  he informed them that no tickets or citations would be issued. Lawrence felt relieved
+  but still guilty about the damage caused by the accident.
+- Richard felt a little frustrated that he would now have to deal with repairs to
+  his car, but he was also grateful that nobody had been seriously hurt in the accident.
+  He was more concerned about his slight neck injury and scheduled an X-ray to see
+  if there were any fractures or serious damage to his spine.
+- Meanwhile, Lawrence

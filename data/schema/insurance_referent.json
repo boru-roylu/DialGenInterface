@@ -1,0 +1,27 @@
+[
+    {
+        "id": "0",
+        "val": "Caller",
+        "color": "#f66d9b" 
+    },
+    {
+        "id": "1",
+        "val": "Other Driver",
+        "color": "#f66d9b" 
+    },
+    {
+        "id": "2",
+        "val": "Caller's Passenger",
+        "color": "#f66d9b" 
+    },
+    {
+        "id": "3",
+        "val": "Other Driver's Passenger",
+        "color": "#f66d9b" 
+    },
+    {
+        "id": "4",
+        "val": "Witness",
+        "color": "#f66d9b" 
+    }
+]

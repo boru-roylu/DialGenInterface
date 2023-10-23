@@ -1,0 +1,107 @@
+body {
+     margin:0 auto;
+     max-width: 2500px;
+     font-size: 12px;
+     font-family: Helvetica, Arial, sans-serif;
+ }
+
+textarea { 
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+table.myFormat th, tr, td { 
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif; 
+  margin: 0 auto;
+}
+
+.button-sm {
+  font-size: 8px;
+}
+
+p.tiny {
+  font-size: 12px;
+}
+
+p {
+  font-size: 12px;
+}
+
+ul li { 
+  padding: 10px 0px; 
+}
+
+table.hidden tr.hidden { display: none; }
+table.hidden tr { display: table-row; }
+
+#longHistory {
+  width: 100%;
+  padding: 50px 0;
+  margin-top: 20px;
+}
+
+.dialog_history {
+  overflow-y:auto;
+  height: 150px;
+}
+
+.prompt {
+  overflow-y:auto;
+  height: 200px;
+}
+
+.actions {
+  height: 100px;
+}
+
+.tobeannotated {
+  overflow-y:auto;
+  height: 120px;
+}
+
+.edit {
+  height: 500px; /* Should be removed. Only for demonstration */
+  text-align: center;
+  overflow-y:auto;
+}
+
+/* Create two equal columns that floats next to each other */
+.page_col {
+  float: left;
+  width: 47%;
+  padding: 10px;
+  height: 720px; /* Should be removed. Only for demonstration */
+  text-align: center;
+  margin: 2px;
+}
+
+.page_col_short {
+  float: left;
+  width: 45%;
+  padding: 5px;
+  height: 400px; /* Should be removed. Only for demonstration */
+  text-align: center;
+  margin: 2px;
+}
+
+/* Clear floats after the columns */
+.page_row {
+  content: "";
+  display: table;
+  clear: both;
+  margin: 2px;
+  padding: 10px;
+}
+
+/* Add some CSS to style the floating window */
+#time-spent {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+}

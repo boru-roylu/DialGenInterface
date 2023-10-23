@@ -1,0 +1,452 @@
+role_to_party:
+  agent: Denise
+  user: Jesus
+story_caller_tuples:
+- domain: AccidentDetails
+  slot: Accident Location
+  value: null
+  mandatory_value: true
+- domain: Adjuster
+  slot: Permission to Record
+  value: 'Yes'
+  mandatory_value: true
+- domain: ContactInfo
+  slot: First Name
+  value: Jesus
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Last Name
+  value: Godbee
+  mandatory_value: true
+- domain: DriverActions
+  slot: Car Motion
+  value: Changing Lanes, Backing, Traveling Forward
+  mandatory_value: true
+- domain: DriverActions
+  slot: Speed
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Police Report
+  value: 'No'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Damage Part
+  value: Front Right
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Passengers
+  value: 2+
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Witnesses
+  value: 'Yes'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Date of Accident
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Time of Accident
+  value: null
+  mandatory_value: false
+- domain: CarInfo
+  slot: Make/Model
+  value: Saab 9000
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make Year
+  value: '1994'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Color
+  value: navy blue
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Traffic Signal
+  value: Unsure
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Description of Lanes
+  value: Turn Lane
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Num of Lanes
+  value: '3'
+  mandatory_value: true
+- domain: Trip
+  slot: Destination of Trip
+  value: bank
+  mandatory_value: false
+- domain: TrafficEnvironment
+  slot: Road Condition
+  value: Steep Incline
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Obstructions to View
+  value: 'Yes'
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Email Address
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Skid Marks
+  value: Unsure
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Date of Birth
+  value: null
+  mandatory_value: false
+- domain: TrafficEnvironment
+  slot: Traffic Condition
+  value: Heavy
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Children Involved
+  value: 'Yes'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Airbag Deployed
+  value: Unsure
+  mandatory_value: true
+- domain: Trip
+  slot: Purpose of Trip
+  value: null
+  mandatory_value: false
+- domain: Trip
+  slot: Origin of Trip
+  value: gym
+  mandatory_value: false
+- domain: TrafficEnvironment
+  slot: Weather Visibility
+  value: Windy
+  mandatory_value: true
+story_other_driver_tuples:
+- domain: Adjuster
+  slot: Permission to Record
+  value: 'Yes'
+  mandatory_value: true
+- domain: ContactInfo
+  slot: First Name
+  value: Melissa
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Last Name
+  value: Williams
+  mandatory_value: true
+- domain: DriverActions
+  slot: Car Motion
+  value: Other, Turning, Backing
+  mandatory_value: true
+- domain: DriverActions
+  slot: Speed
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Police Report
+  value: Unsure
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Damage Part
+  value: Right
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Passengers
+  value: '1'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Witnesses
+  value: 'No'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make/Model
+  value: Land Rover LR4
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make Year
+  value: '2016'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Color
+  value: beige
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Traffic Signal
+  value: Unsure
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Description of Lanes
+  value: Turn Lane
+  mandatory_value: true
+- domain: CarInfo
+  slot: Rideshare (Uber/Lyft)
+  value: Unsure
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Date of Birth
+  value: null
+  mandatory_value: false
+- domain: InjuryDetails
+  slot: Body Part Injured
+  value: Limb
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Subjective Fault
+  value: Caller
+  mandatory_value: true
+- domain: Evidences
+  slot: Tickets Citations
+  value: No Ticket
+  mandatory_value: true
+- domain: DriverActions
+  slot: Brake
+  value: 'Yes'
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Road Condition
+  value: Slippery
+  mandatory_value: true
+- domain: Evidences
+  slot: Police Report Number
+  value: null
+  mandatory_value: false
+- domain: InjuryDetails
+  slot: Injury Type
+  value: Cut Scratch
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Medical Treatment
+  value: Other
+  mandatory_value: true
+'[AccidentDetails_TUPLES]':
+- domain: AccidentDetails
+  slot: Accident Location
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Damage Part
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Passengers
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Witnesses
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Date of Accident
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Time of Accident
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Children Involved
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Airbag Deployed
+  value: Unsure
+  mandatory_value: true
+'[Adjuster_TUPLES]':
+- domain: Adjuster
+  slot: Permission to Record
+  value: null
+  mandatory_value: true
+'[ContactInfo_TUPLES]':
+- domain: ContactInfo
+  slot: First Name
+  value: Jesus
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Last Name
+  value: Godbee
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Email Address
+  value: null
+  mandatory_value: false
+- domain: ContactInfo
+  slot: Date of Birth
+  value: null
+  mandatory_value: false
+'[DriverActions_TUPLES]':
+- domain: DriverActions
+  slot: Car Motion
+  value: null
+  mandatory_value: true
+- domain: DriverActions
+  slot: Speed
+  value: null
+  mandatory_value: false
+'[Evidences_TUPLES]':
+- domain: Evidences
+  slot: Police Report
+  value: null
+  mandatory_value: true
+- domain: Evidences
+  slot: Skid Marks
+  value: null
+  mandatory_value: true
+'[CarInfo_TUPLES]':
+- domain: CarInfo
+  slot: Make/Model
+  value: Saab 9000
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make Year
+  value: null
+  mandatory_value: true
+- domain: CarInfo
+  slot: Color
+  value: null
+  mandatory_value: true
+'[TrafficEnvironment_TUPLES]':
+- domain: TrafficEnvironment
+  slot: Traffic Signal
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Description of Lanes
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Num of Lanes
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Road Condition
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Obstructions to View
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Traffic Condition
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Weather Visibility
+  value: null
+  mandatory_value: true
+'[Trip_TUPLES]':
+- domain: Trip
+  slot: Destination of Trip
+  value: null
+  mandatory_value: false
+- domain: Trip
+  slot: Purpose of Trip
+  value: null
+  mandatory_value: false
+- domain: Trip
+  slot: Origin of Trip
+  value: null
+  mandatory_value: false
+story_summaries:
+- 'Here are the information we have about the caller:'
+- 'ContactInfo: (First Name = Jesus), (Last Name = Godbee)
+
+  DriverActions: (Car Motion = Changing Lanes, Backing, Traveling Forward)
+
+  Evidences: (Police Report = No), (Skid Marks = Unsure)
+
+  AccidentDetails: (Damage Part = Front Right), (Num of Passengers = 2+), (Witnesses
+  = Yes), (Children Involved = Yes), (Airbag Deployed = Unsure)
+
+  CarInfo: (Color = navy blue)
+
+  TrafficEnvironment: (Traffic Signal = Unsure), (Description of Lanes = Turn Lane),
+  (Num of Lanes = 3), (Road Condition = Steep Incline), (Obstructions to View = Yes),
+  (Traffic Condition = Heavy), (Weather Visibility = Windy)
+
+  Trip: (Destination of Trip = bank), (Origin of Trip = gym)'
+- 'Here are the information we have about the other driver:'
+- 'ContactInfo: (First Name = Melissa), (Last Name = Williams)
+
+  DriverActions: (Car Motion = Other, Turning, Backing), (Brake = Yes)
+
+  Evidences: (Police Report = Unsure), (Tickets Citations = No Ticket)
+
+  AccidentDetails: (Damage Part = Right), (Num of Passengers = 1), (Witnesses = No),
+  (Subjective Fault = Caller)
+
+  CarInfo: (Make/Model = Land Rover LR4), (Make Year = 2016), (Color = beige), (Rideshare
+  (Uber/Lyft) = Unsure)
+
+  TrafficEnvironment: (Traffic Signal = Unsure), (Description of Lanes = Turn Lane),
+  (Road Condition = Slippery)
+
+  InjuryDetails: (Body Part Injured = Limb), (Injury Type = Cut Scratch), (Medical
+  Treatment = Other)'
+- Use the information above to create a length and detail-enriched story about a car
+  accident in a roadway.
+- Ensure the story cover how the crash happened.
+- No need to provide a summary of the story.
+- The story is around 1000 words.
+information_summaries:
+- 'Accident details: [AccidentDetails_TUPLES].'
+- 'Evidences of the car accident: [Evidences_TUPLES].'
+- 'Traffic condition: [TrafficEnvironment_TUPLES].'
+- 'Caller''s driver action: [DriverActions_TUPLES].'
+- 'Caller''s car information: [CarInfo_TUPLES].'
+- 'Caller''s injury details: [InjuryDetails_TUPLES].'
+step_summaries:
+- Have role play car accident claim call. One person is an agent [AGENT] from a car
+  insurance company and the other is the caller [USER] who wants to file a claim.
+- At beginning of the call, have [AGENT] ask for [USER]'s permission to record the
+  call and proceeds with the conversation.
+- Within some <p> </p>, have simulate poor phone connection. Have [AGENT] and [USER]
+  can not hear each other and need to repeat what they said.
+- Have [AGENT] verify [USER] personal information to access account information at
+  the beginning of the call.
+- Have [USER] describe the car accident by using story and tuples above to describe
+  the accident.
+- Have [AGENT] confirm new information with [USER] during the call to ensure consistency.
+- Have [AGENT] and [USER] engage in small talk with each other.
+- Have [AGENT] explain the insurance coverages to [USER].
+user_personality: '[USER] is analytical, focused on the details and logistics of the
+  claim process, may ask for precise information and explanations.'
+agent_personality: '[AGENT] is conversational, personable, patient, empathetic, sympathetic
+  and professional.'
+instructions:
+- Use the story, information, and personality to create a role play script and follow
+  the steps.
+story:
+- Jesus Godbee was on his way to the bank to deposit his workout earnings when he
+  suddenly heard a loud noise. He looked at his side mirror and saw another car hitting
+  his front right side. He quickly pulled off the road and got out of his navy blue
+  sedan. He could hear the screams of his passengers, who were still inside the car,
+  and he immediately checked on them.
+- Jesus was relieved when he found out that everyone in his car was fine, but he was
+  worried about what happened to the other driver. He saw a beige Land Rover LR4 several
+  meters away from his car, and it seemed like the driver was also in a state of shock.
+- He approached the other driver named Melissa Williams, who seemed to have injured
+  her limb. She had a cut scratch and needed medical attention. Jesus immediately
+  called for an ambulance while he waited for the paramedics to arrive, he tried to
+  calm Melissa down by asking her some questions about what happened.
+- Melissa mentioned that she was turning onto the turn lane when she saw Jesus's car
+  backing out of a parking space. She hit the brakes but it was too late, and she
+  ended up hitting Jesus's car. Melissa also mentioned that the road condition was
+  slippery, which may have contributed to the accident.
+- Jesus recalled that he wasn't backing up, but rather changing lanes to avoid an
+  obstruction to his view. He explained this to Melissa, but she was in pain and couldn't
+  concentrate. Fortunately, witnesses nearby confirmed what Jesus said. They saw Melissa's
+  Land Rover suddenly swerve towards Jesus's car without any apparent reason.
+- The witnesses also mentioned that the traffic conditions were heavy at that time
+  with a steep incline, and there was no traffic signal in the area. The road had
+  three lanes with an additional turn lane, which made it difficult for drivers to
+  see each other especially if there were obstructions along the way.
+- Jesus and Melissa didn't exchange any tickets or citations since there was no police
+  report filed. Jesus tried to be understanding and didn't blame Melissa for what
+  happened. However, he was distraught after seeing the damage on his car. The front
+  right part of his car was severely damaged, and it might take a hefty sum of money
+  to repair it.
+- Melissa's Land Rover had damage on the right side, but it wasn't as severe as Jesus's
+  car. Her car was newer and more expensive than Jesus's, which made him feel even
+  worse since he didn't want to cause anyone trouble.
+- After the paramedics arrived, they took Melissa to the hospital to treat her injuries

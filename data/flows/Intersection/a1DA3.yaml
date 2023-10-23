@@ -1,0 +1,497 @@
+role_to_party:
+  agent: Carol
+  user: Andrew
+story_caller_tuples:
+- domain: AccidentDetails
+  slot: Accident Location
+  value: null
+  mandatory_value: true
+- domain: Adjuster
+  slot: Permission to Record
+  value: 'Yes'
+  mandatory_value: true
+- domain: ContactInfo
+  slot: First Name
+  value: Andrew
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Last Name
+  value: Joy
+  mandatory_value: true
+- domain: DriverActions
+  slot: Car Motion
+  value: Backing, Turning, Stopped, Other
+  mandatory_value: true
+- domain: DriverActions
+  slot: Speed
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Police Report
+  value: Unsure
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Damage Part
+  value: Front Right
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Passengers
+  value: Unsure
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Witnesses
+  value: 'No'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Date of Accident
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Time of Accident
+  value: null
+  mandatory_value: false
+- domain: CarInfo
+  slot: Make/Model
+  value: Mitsubishi Lancer
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make Year
+  value: '2008'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Color
+  value: teal
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Traffic Signal
+  value: Stop Sign
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Description of Lanes
+  value: Other
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Num of Lanes
+  value: '2'
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Road Condition
+  value: Debris
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Injury Type
+  value: No Injury
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Medical Treatment
+  value: Other
+  mandatory_value: true
+- domain: DriverActions
+  slot: Brake
+  value: Unsure
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Ambulance
+  value: Unsure
+  mandatory_value: true
+- domain: CarInfo
+  slot: Rideshare (Uber/Lyft)
+  value: 'No'
+  mandatory_value: true
+- domain: Trip
+  slot: Origin of Trip
+  value: gas station
+  mandatory_value: false
+- domain: Trip
+  slot: Destination of Trip
+  value: pharmacy
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Children Involved
+  value: 'No'
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Speed Limit
+  value: null
+  mandatory_value: false
+- domain: DriverActions
+  slot: Traffic Controls Obeyed
+  value: 'Yes'
+  mandatory_value: true
+- domain: Evidences
+  slot: Skid Marks
+  value: 'Yes'
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Body Part Injured
+  value: Head
+  mandatory_value: true
+- domain: Trip
+  slot: Purpose of Trip
+  value: null
+  mandatory_value: false
+story_other_driver_tuples:
+- domain: Adjuster
+  slot: Permission to Record
+  value: 'Yes'
+  mandatory_value: true
+- domain: ContactInfo
+  slot: First Name
+  value: Linda
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Last Name
+  value: Riddle
+  mandatory_value: true
+- domain: DriverActions
+  slot: Car Motion
+  value: Traveling Forward, Other, Unsure
+  mandatory_value: true
+- domain: DriverActions
+  slot: Speed
+  value: null
+  mandatory_value: false
+- domain: Evidences
+  slot: Police Report
+  value: 'Yes'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Damage Part
+  value: Back
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Passengers
+  value: '1'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Witnesses
+  value: Unsure
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make/Model
+  value: MAZDA B-Series Regular Cab
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make Year
+  value: '1996'
+  mandatory_value: true
+- domain: CarInfo
+  slot: Color
+  value: light blue
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Traffic Signal
+  value: Unsure
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Description of Lanes
+  value: Turn Lane
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Ambulance
+  value: 'Yes'
+  mandatory_value: true
+- domain: Evidences
+  slot: Tickets Citations
+  value: Unsure
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Body Part Injured
+  value: Neck
+  mandatory_value: true
+- domain: Evidences
+  slot: Pictures
+  value: No Picture
+  mandatory_value: true
+- domain: DriverActions
+  slot: Horn
+  value: Unsure
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Speed Limit
+  value: null
+  mandatory_value: false
+- domain: ContactInfo
+  slot: Home Address
+  value: 777 Berry Island, Houston, Texas 34574
+  mandatory_value: true
+- domain: Adjuster
+  slot: Set up Rental
+  value: 'No'
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Children Involved
+  value: Unsure
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Traffic Condition
+  value: Other
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Phone Number
+  value: 001-701-434-7973
+  mandatory_value: true
+- domain: Evidences
+  slot: Police Report Number
+  value: null
+  mandatory_value: false
+- domain: InjuryDetails
+  slot: Injury Type
+  value: Sore
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Medical Treatment
+  value: X-Ray
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Obstructions to View
+  value: Unsure
+  mandatory_value: true
+'[AccidentDetails_TUPLES]':
+- domain: AccidentDetails
+  slot: Accident Location
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Damage Part
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Num of Passengers
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Witnesses
+  value: null
+  mandatory_value: true
+- domain: AccidentDetails
+  slot: Date of Accident
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Time of Accident
+  value: null
+  mandatory_value: false
+- domain: AccidentDetails
+  slot: Children Involved
+  value: null
+  mandatory_value: true
+'[Adjuster_TUPLES]':
+- domain: Adjuster
+  slot: Permission to Record
+  value: null
+  mandatory_value: true
+'[ContactInfo_TUPLES]':
+- domain: ContactInfo
+  slot: First Name
+  value: Andrew
+  mandatory_value: true
+- domain: ContactInfo
+  slot: Last Name
+  value: Joy
+  mandatory_value: true
+'[DriverActions_TUPLES]':
+- domain: DriverActions
+  slot: Car Motion
+  value: null
+  mandatory_value: true
+- domain: DriverActions
+  slot: Speed
+  value: null
+  mandatory_value: false
+- domain: DriverActions
+  slot: Brake
+  value: Unsure
+  mandatory_value: true
+- domain: DriverActions
+  slot: Traffic Controls Obeyed
+  value: null
+  mandatory_value: true
+'[Evidences_TUPLES]':
+- domain: Evidences
+  slot: Police Report
+  value: null
+  mandatory_value: true
+- domain: Evidences
+  slot: Skid Marks
+  value: null
+  mandatory_value: true
+'[CarInfo_TUPLES]':
+- domain: CarInfo
+  slot: Make/Model
+  value: null
+  mandatory_value: true
+- domain: CarInfo
+  slot: Make Year
+  value: null
+  mandatory_value: true
+- domain: CarInfo
+  slot: Color
+  value: null
+  mandatory_value: true
+- domain: CarInfo
+  slot: Rideshare (Uber/Lyft)
+  value: 'No'
+  mandatory_value: true
+'[TrafficEnvironment_TUPLES]':
+- domain: TrafficEnvironment
+  slot: Traffic Signal
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Description of Lanes
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Num of Lanes
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Road Condition
+  value: null
+  mandatory_value: true
+- domain: TrafficEnvironment
+  slot: Speed Limit
+  value: null
+  mandatory_value: false
+'[InjuryDetails_TUPLES]':
+- domain: InjuryDetails
+  slot: Injury Type
+  value: null
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Medical Treatment
+  value: null
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Ambulance
+  value: null
+  mandatory_value: true
+- domain: InjuryDetails
+  slot: Body Part Injured
+  value: null
+  mandatory_value: true
+'[Trip_TUPLES]':
+- domain: Trip
+  slot: Origin of Trip
+  value: null
+  mandatory_value: false
+- domain: Trip
+  slot: Destination of Trip
+  value: null
+  mandatory_value: false
+- domain: Trip
+  slot: Purpose of Trip
+  value: null
+  mandatory_value: false
+story_summaries:
+- 'Here are the information we have about the caller:'
+- 'ContactInfo: (First Name = Andrew), (Last Name = Joy)
+
+  DriverActions: (Car Motion = Backing, Turning, Stopped, Other), (Brake = Unsure),
+  (Traffic Controls Obeyed = Yes)
+
+  Evidences: (Police Report = Unsure), (Skid Marks = Yes)
+
+  AccidentDetails: (Damage Part = Front Right), (Num of Passengers = Unsure), (Witnesses
+  = No), (Children Involved = No)
+
+  CarInfo: (Color = teal), (Rideshare (Uber/Lyft) = No)
+
+  TrafficEnvironment: (Traffic Signal = Stop Sign), (Description of Lanes = Other),
+  (Num of Lanes = 2), (Road Condition = Debris)
+
+  InjuryDetails: (Injury Type = No Injury), (Medical Treatment = Other), (Ambulance
+  = Unsure), (Body Part Injured = Head)
+
+  Trip: (Origin of Trip = gas station), (Destination of Trip = pharmacy)'
+- 'Here are the information we have about the other driver:'
+- 'ContactInfo: (First Name = Linda), (Last Name = Riddle), (Home Address = 777 Berry
+  Island, Houston, Texas 34574), (Phone Number = 001-701-434-7973)
+
+  DriverActions: (Car Motion = Traveling Forward, Other, Unsure), (Horn = Unsure)
+
+  Evidences: (Police Report = Yes), (Tickets Citations = Unsure), (Pictures = No Picture)
+
+  AccidentDetails: (Damage Part = Back), (Num of Passengers = 1), (Witnesses = Unsure),
+  (Children Involved = Unsure)
+
+  CarInfo: (Make/Model = MAZDA B-Series Regular Cab), (Make Year = 1996), (Color =
+  light blue)
+
+  TrafficEnvironment: (Traffic Signal = Unsure), (Description of Lanes = Turn Lane),
+  (Traffic Condition = Other), (Obstructions to View = Unsure)
+
+  InjuryDetails: (Ambulance = Yes), (Body Part Injured = Neck), (Injury Type = Sore),
+  (Medical Treatment = X-Ray)
+
+  Adjuster: (Set up Rental = No)'
+- Use the information above to create a length and detail-enriched story about a car
+  accident in a intersection.
+- Ensure the story cover how the crash happened.
+- No need to provide a summary of the story.
+- The story is around 1000 words.
+information_summaries:
+- 'Accident details: [AccidentDetails_TUPLES].'
+- 'Evidences of the car accident: [Evidences_TUPLES].'
+- 'Traffic condition: [TrafficEnvironment_TUPLES].'
+- 'Caller''s driver action: [DriverActions_TUPLES].'
+- 'Caller''s car information: [CarInfo_TUPLES].'
+- 'Caller''s injury details: [InjuryDetails_TUPLES].'
+step_summaries:
+- Have role play car accident claim call. One person is an agent [AGENT] from a car
+  insurance company and the other is the caller [USER] who wants to file a claim.
+- At beginning of the call, have [AGENT] ask for [USER]'s permission to record the
+  call and proceeds with the conversation.
+- Within some <p> </p>, have simulate poor phone connection. Have [AGENT] and [USER]
+  can not hear each other and need to repeat what they said.
+- Have [AGENT] verify [USER] personal information to access account information at
+  the beginning of the call.
+- Have [USER] describe the car accident by using story and tuples above to describe
+  the accident.
+- Have [AGENT] confirm new information with [USER] during the call to ensure consistency.
+- Have [AGENT] and [USER] engage in small talk with each other.
+- Have [AGENT] explain the insurance coverages to [USER].
+user_personality: '[USER] is defensive, feeling the need to justify their actions
+  or place blame on others, may be unwilling to take responsibility for the accident.'
+agent_personality: '[AGENT] is conversational, personable, patient, empathetic, sympathetic
+  and professional.'
+instructions:
+- Use the story, information, and personality to create a role play script and follow
+  the steps.
+story:
+- Andrew Joy had just left the gas station and was on his way to the pharmacy when
+  he approached the intersection of Elm Street and Pine Avenue. The traffic signal
+  at the intersection was a stop sign and Andrew made sure to come to a complete stop
+  before continuing through the intersection. However, as he began to pull forward,
+  he suddenly felt a jolt and heard a loud crashing sound.
+- Andrew's teal sedan had been struck on the front right side by a light blue Mazda
+  that was traveling down Pine Avenue. The impact caused Andrew's car to spin around,
+  leaving it facing the opposite direction. He was stunned and a little disoriented
+  but soon realized that he had escaped without injury.
+- Andrew quickly checked to see if there were any passengers in his car, but all he
+  saw were a few items that had been knocked onto the floor during the collision.
+  He then looked out the window and saw that the other driver, Linda Riddle, had also
+  stopped her vehicle. She appeared to be uninjured but he couldn't tell if there
+  were any passengers in her car.
+- Andrew got out of his car and approached Linda's vehicle to assess the damage. He
+  noticed that her car had hit him in the back and it was clear that both cars had
+  sustained significant damage. Andrew tried to remain calm and collected as he asked
+  Linda if she was okay. She replied that she was sore but didn't seem seriously injured.
+- As they proceeded to exchange information, Andrew noticed that Linda seemed agitated
+  and a little disoriented. When he asked her what happened, she admitted that she
+  wasn't sure. She said that she vaguely remembered honking her horn before hitting
+  his car, but couldn't remember why.
+- They didn't have any witnesses to confirm what happened, so Andrew called the police
+  to report the accident. The police arrived within minutes and began their investigation.
+- The officer who arrived on scene made sure both drivers were alright before examining
+  the cars for damages. He found skid marks on the road leading up to the intersection
+  from Linda's vehicle, suggesting she had either been traveling too fast or was unable
+  to brake in time. The officer also noted debris on the road, which might have contributed
+  to the accident.
+- The officer questioned both drivers and took down their accounts of what happened.
+  Andrew explained that he had come to a complete stop at the intersection before
+  continuing through, while Linda couldn't remember why she honked her horn and hit
+  Andrew's car. The officer also checked for any traffic citations or tickets, but
+  none were issued at the scene.
+- After taking pictures of both vehicles and collecting information
